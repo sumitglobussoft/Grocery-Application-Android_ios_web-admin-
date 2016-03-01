@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/rel_deladd"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#283337" >
+
+        <ImageView
+            android:id="@+id/bkbtn_deladd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/leftarrow_w" />
+
+        <TextView
+            android:id="@+id/txt_deladd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bkbtn_deladd"
+            android:gravity="center_vertical"
+            android:text="Delivery Address"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rel_deladd"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="32dp"
+        android:text="Address"
+        android:textColor="@color/Gray" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/txtadd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/restaurant_add" />   
+
+    <TextView
+        android:id="@+id/del_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_name"
+        android:layout_below="@+id/add_name"
+        android:layout_marginTop="10dp"
+        android:text="Near Hanuman Vatika panposh road, Sundergarh - 769004, Gujarat"
+        android:textColor="@color/restaurant_name"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/add_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtadd"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="15dp"
+        android:text="Dinesh Kumar Sahu"
+        android:textColor="@color/restaurant_name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/del_mbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/del_add"
+        android:layout_below="@+id/del_add"
+        android:layout_marginTop="16dp"
+        android:text="Mobile: "
+        android:textColor="@color/restaurant_name"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtdel_mbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/del_mbl"
+        android:layout_alignBottom="@+id/del_mbl"
+        android:layout_toRightOf="@+id/txtadd"
+        android:text="9999999999"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/bullets_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/del_add"
+        android:layout_below="@+id/del_mbl"
+        android:layout_marginTop="16dp" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:text="•" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:text="  Cash on delivery available"
+                android:textColor="@color/restaurant_name"
+                android:textSize="12sp" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:text="•" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:text="  9 days by standard delivery"
+                android:textColor="@color/restaurant_name"
+                android:textSize="12sp" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:text="•" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:text="  Faster delivery not available"
+                android:textColor="@color/restaurant_name"
+                android:textSize="12sp" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/bullets_text"
+        android:background="@color/restaurant_add"
+        android:layout_marginTop="15dp" />
+    
+    <RelativeLayout 
+        android:id="@+id/rel_editadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_alignLeft="@+id/bullets_text"        
+        android:layout_marginTop="14dp">   
+
+    <TextView
+        android:id="@+id/txt_editadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="Edit/Change address"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/rt_ar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="21dp"
+        android:src="@drawable/right_arrow" />    
+     </RelativeLayout>
+     
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/rel_editadd"
+        android:background="@color/restaurant_add"
+        android:layout_marginTop="15dp" />
+    
+     <RelativeLayout 
+        android:id="@+id/rel_addnewadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3"
+        android:layout_alignLeft="@+id/bullets_text"        
+        android:layout_marginTop="14dp">   
+
+    <TextView
+        android:id="@+id/txt_addnewadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="Add new address"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/new_rt_ar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="21dp"
+        android:src="@drawable/right_arrow" />    
+     </RelativeLayout>
+     
+     <View
+        android:id="@+id/view4"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rel_addnewadd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/restaurant_add" />
+     
+     <ImageView 
+         android:id="@+id/cnt_pay"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/continue_payment"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

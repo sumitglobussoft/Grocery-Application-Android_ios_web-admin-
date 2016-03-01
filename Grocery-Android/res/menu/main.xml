@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search"
+        android:orderInCategory="100"
+        android:title="@string/action_search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_bag"
+        android:icon="@drawable/bag"
+        android:orderInCategory="100"
+        android:title="@string/action_bag"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/notification"
+        android:orderInCategory="100"
+        android:title="@string/action_notification"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_userpic"
+        android:actionLayout="@layout/userpic"
+        android:orderInCategory="100"
+        android:title="user pic"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_myorders"
+        android:orderInCategory="100"
+        android:title="My Orders"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_myacc"
+        android:orderInCategory="100"
+        android:title="My Account"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="100"
+        android:title="My Profile"
+        app:showAsAction="ifRoom"/>
+
+    <!--
+           <item 
+          android:id="@+id/action_menu"
+          android:orderInCategory="100"
+          android:title="@string/action_menu"
+          android:icon="@drawable/icon_tray"
+          app:showAsAction="always" />
+    -->
+
+</menu>

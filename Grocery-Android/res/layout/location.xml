@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFFFFF" >
+
+    <ImageView
+        android:id="@+id/loc_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp"
+        android:src="@drawable/logo" />
+
+    <Spinner
+        android:id="@+id/spinner_country"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/loc_appname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/select_state"
+        android:prompt="@string/select_country" >
+    </Spinner>
+
+    <ImageView
+        android:id="@+id/slct_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/spinner_country"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/downarrow" />
+
+    <Spinner
+        android:id="@+id/spinner_place"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/spinner_country"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/select_state"
+        android:prompt="@string/select_place" >
+    </Spinner>
+
+    <ImageView
+        android:id="@+id/slct_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/slct_btn1"
+        android:layout_alignTop="@+id/spinner_place"
+        android:paddingTop="12dp"
+        android:src="@drawable/downarrow" />
+    
+    <TextView 
+        android:id="@+id/cat_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

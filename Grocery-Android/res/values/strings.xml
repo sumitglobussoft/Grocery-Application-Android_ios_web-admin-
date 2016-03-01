@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Grocery</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_place">Select Place</string>
+    <string name="action_search">search</string>
+    <string name="action_bag">bag</string>
+    <string name="action_notification">notification</string>
+     <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    
+    <string-array name="left_nav_drawer_items">
+        <item>Home</item>
+        <item>Restaurants</item>
+        <item>Groceries</item>
+        <item>My Orders</item>
+        <item>Order Status</item>
+        <item>Account</item>
+        <item>Rate us on the Play Store</item>
+        <item>FAQs</item>
+        <item>Settings</item>
+        <item>Help</item>
+        <item>Sign Out</item>
+    </string-array>
+
+</resources>

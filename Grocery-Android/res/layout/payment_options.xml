@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/rel_po"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#283337" >
+
+        <ImageView
+            android:id="@+id/bkbtn_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/leftarrow_w" />
+
+        <TextView
+            android:id="@+id/txt_pay_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bkbtn_pay"
+            android:gravity="center_vertical"
+            android:text="Payments Details"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_pay_op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_po"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Payment Options"
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/pay_opt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_pay_op"
+        android:layout_margin="10dp"
+        android:background="#EDEDED" >
+
+        <RadioGroup
+            android:id="@+id/rg_pay_opt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/credit_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Credit Card" />
+
+            <View
+                android:id="@+id/SplitLine_hor1"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/credit_card"
+                android:background="#D8D8D8" />
+
+            <RadioButton
+                android:id="@+id/debit_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Debit Card" />
+
+            <View
+                android:id="@+id/SplitLine_hor2"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/debit_card"
+                android:background="#D8D8D8" />
+
+            <RadioButton
+                android:id="@+id/net_banking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Net Banking" />
+
+            <View
+                android:id="@+id/SplitLine_hor3"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/net_banking"
+                android:background="#D8D8D8" />
+
+            <RadioButton
+                android:id="@+id/cod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" COD" />
+        </RadioGroup>
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/mk_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/make_payment" />
+
+</RelativeLayout>

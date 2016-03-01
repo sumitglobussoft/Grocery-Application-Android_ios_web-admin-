@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel_cat_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <!-- Thumbnail Image -->
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/cat_thumbnail"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/image_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/thumbnail_icon" />
+
+            <!-- Restaurant Name -->
+
+            <TextView
+                android:id="@+id/cat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/cat_thumbnail"
+                android:layout_toRightOf="@+id/cat_thumbnail"
+                android:text="cat_name"
+                android:textColor="@color/restaurant_name"
+                android:textSize="@dimen/restaurant_name" />
+
+            <!-- Restaurant Address -->
+
+            <TextView
+                android:id="@+id/cat_add"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cat_name"
+                android:layout_toRightOf="@+id/cat_thumbnail"
+                android:text="cat_add"
+                android:textColor="@color/restaurant_add"
+                android:textSize="@dimen/restaurant_add" />
+
+            <TextView
+                android:id="@+id/cat_qnty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cat_add"
+                android:layout_toRightOf="@+id/cat_thumbnail"
+                android:layout_marginTop="5dp"
+                android:text="cat_qnty"
+                android:textColor="@color/cuisine"
+                android:textSize="@dimen/cuisine" />
+
+            <TextView
+                android:id="@+id/cat_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cat_qnty"
+                android:layout_toRightOf="@+id/cat_thumbnail"
+                android:text="cat_price"
+                android:textColor="@color/price"
+                android:textSize="@dimen/price" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

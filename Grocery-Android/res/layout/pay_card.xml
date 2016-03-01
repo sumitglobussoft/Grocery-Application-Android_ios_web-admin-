@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rel_po_card"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#283337" >
+
+        <ImageView
+            android:id="@+id/bkbtn_pay_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/leftarrow_w" />
+
+        <TextView
+            android:id="@+id/txt_pay_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bkbtn_pay_card"
+            android:gravity="center_vertical"
+            android:text="Payments Details"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_po_card" >
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/txt_pay_op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="Payment Options"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txt_creditdebit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pay_op"
+                android:layout_margin="10dp"
+                android:text="Credit/Debit card"
+                android:textColor="#000000" />
+
+            <RelativeLayout
+                android:id="@+id/rel_card_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_creditdebit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp" >
+
+                <TextView
+                    android:id="@+id/card_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Card Number*"
+                    android:textColor="@color/restaurant_name"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edit_cnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_num"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/card_bg"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/card_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_cnum"
+                    android:layout_marginTop="15dp"
+                    android:text="Name on Card*"
+                    android:textColor="@color/restaurant_name"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edit_cname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_name"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/card_bg"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:id="@+id/lin_val"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_cname"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <RelativeLayout
+                        android:id="@+id/rel_valmon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/ex_mon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expiry Month*"
+                            android:textColor="@color/restaurant_name"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/ed_exmon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ex_mon"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/card_bg"
+                            android:textColor="#000000" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_valyr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/ex_yr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expiry Year*"
+                            android:textColor="@color/restaurant_name"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/ed_exyr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ex_yr"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/card_bg"
+                            android:textColor="#000000" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_val"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <RelativeLayout
+                        android:id="@+id/rel_valcvv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/txt_cvv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CVV*"
+                            android:textColor="@color/restaurant_name"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/ed_excvv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_cvv"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/card_bg"
+                            android:textColor="#000000" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cvv_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/txt_cvv_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/im_cvv_num"
+                            android:text="Last 3 digits printed on the back side of the card"
+                            android:textColor="@color/Gray"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/im_cvv_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/cvv" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/mk_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/lin_save_Card"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/make_payment" />
+
+                <RelativeLayout
+                    android:id="@+id/lin_save_Card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_cvv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp" >
+
+                    <CheckBox
+                        android:id="@+id/chkbx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector" />
+
+                    <ImageView
+                        android:id="@+id/im_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/txt_savecard"
+                        android:src="@drawable/help" />
+
+                    <TextView
+                        android:id="@+id/txt_savecard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/chkbx"
+                        android:gravity="center_vertical"
+                        android:text="Save this card for future payments"
+                        android:textColor="@color/Gray"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout 
+                android:id="@+id/bill_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_card_details">
+            <include
+                android:id="@+id/bill_sum_layout"                
+                layout="@layout/pay_card2" />
+            
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

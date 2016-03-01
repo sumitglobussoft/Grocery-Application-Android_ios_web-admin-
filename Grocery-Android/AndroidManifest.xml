@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.grocery"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+
+    <application
+        android:name="com.example.grocery.api.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+         <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.example.grocery.SplashscreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.grocery.MainActivity"
+            android:label="@string/app_name" >            
+        </activity>
+        <activity
+            android:name="com.example.grocery.SignUpActivity"
+            android:label="@string/app_name" >            
+        </activity>
+         <activity
+            android:name="com.example.grocery.LoginActivity"
+            android:label="@string/app_name" >            
+        </activity>
+         <activity
+            android:name="com.example.grocery.FetchLocation"
+            android:label="@string/app_name" >            
+        </activity>
+         <activity
+            android:name="com.example.grocery.DeliveryAddress"
+            android:label="@string/app_name" >            
+        </activity>
+         <activity
+            android:name="com.example.grocery.PaymentOptionActivity"
+            android:label="@string/app_name" >            
+        </activity>
+        <activity
+            android:name="com.example.grocery.PayByCard"
+            android:label="@string/app_name" >            
+        </activity>
+         <activity
+            android:name="com.example.grocery.OrderConfirmActivity"
+            android:label="@string/app_name" >            
+        </activity>
+         <activity
+            android:name="com.example.grocery.fragments.SubCat_Tabs_Fragment"
+            android:label="@string/app_name" >            
+        </activity>
+         
+    </application>
+
+</manifest>

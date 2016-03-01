@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_orsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="19dp"
+        android:text="ORDER SUMMARY"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/rel_bill_sum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_orsum"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel_pc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" 
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/bill_ttl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bag Total"
+                android:textColor="@color/Gray" />
+
+            <TextView
+                android:id="@+id/bill_ttl_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Rs 2,000" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rel_pc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" 
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/big_dsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Big Discount"
+                android:textColor="@color/Gray" />
+
+            <TextView
+                android:id="@+id/dsc_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="-Rs 500" 
+                android:textColor="#2AA513"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rel_pc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/txt_st"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Total"
+                android:textColor="@color/Gray" />
+
+            <TextView
+                android:id="@+id/st_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Rs 1,500"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rel_pc4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" 
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/txt_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VAT/CST Collected"
+                android:textColor="@color/Gray" />
+
+            <TextView
+                android:id="@+id/tax_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Rs 37"  />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rel_pc5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/txt_cpn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coupon Discount"
+                android:textColor="@color/Gray" />
+
+            <TextView
+                android:id="@+id/cpn_sts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Apply Coupon" 
+                android:textSize="13sp"
+                android:textColor="#6ED7E0" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rel_pc6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/txt_dlvry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery"
+                android:textColor="@color/Gray" />
+
+            <TextView
+                android:id="@+id/dlvry_sts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Free" 
+                android:textColor="#2AA513" />
+        </RelativeLayout>
+        
+         <RelativeLayout
+            android:id="@+id/rel_pc7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" 
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/txt_ttlpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Payable"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/ttlpay_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Rs 1,600" 
+                android:textColor="#000000" />
+        </RelativeLayout>
+        
+         <ImageView 
+             android:id="@+id/img_place_order"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/placeorder"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="50dp"
+             android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+    
+
+</RelativeLayout>

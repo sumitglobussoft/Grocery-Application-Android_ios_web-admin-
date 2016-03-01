@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="LOGIN USING EMAIL"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/img_login_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login_email"
+        android:layout_alignLeft="@+id/login_email"
+        android:layout_margin="15dp"
+        android:src="@drawable/email" />
+
+    <EditText
+        android:id="@+id/login_passowrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/img_login_passowrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login_passowrd"
+        android:layout_alignLeft="@+id/login_passowrd"
+        android:layout_margin="15dp"
+        android:src="@drawable/password" />
+
+    <ImageView
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_passowrd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/login1" />
+
+    <TextView
+        android:id="@+id/txt_forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Forgot password? "
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/login_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_forgot_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/or" />
+
+    <ImageView
+        android:id="@+id/login_fbk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_or"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_fb" />
+
+    <ImageView
+        android:id="@+id/login_twt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_fbk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/login_tw" />
+
+    <TextView
+        android:id="@+id/policy_text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3D3D3D"
+        android:gravity="center"
+        android:text="By logging in, you agree to Grocery app&apos;s Terms of Service, Privacy Policy and Content Policies."
+        android:textColor="#FFFFFF"
+        android:textSize="6.75sp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_newuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/policy_text"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp" >
+
+        <TextView
+            android:id="@+id/txt_newuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New user? "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/nu_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_newuser"
+            android:text="SingUp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_skip_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/policy_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="25dp" >
+
+        <TextView
+            android:id="@+id/login_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip "
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/loginskip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/login_skip"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+</RelativeLayout>
